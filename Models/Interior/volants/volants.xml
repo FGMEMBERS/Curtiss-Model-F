@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>volants.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>supportvolants</object-name>
+    <object-name>volantG</object-name>
+    <object-name>volantD</object-name>
+    
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- profondeur -->
+  <animation>
+    <name>VolantsComplets</name>
+    <object-name>supportvolants</object-name>
+    <object-name>volantG</object-name>
+    <object-name>volantD</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>VolantsComplets</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor> -15 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <!-- ailerons -->
+  <animation>
+    <type>rotate</type>
+    <object-name>volantG</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor> -70 </factor>
+    <center>
+      <x-m>  0.06061 </x-m>
+      <y-m> -0.27000 </y-m>
+      <z-m>  0.43884 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>volantD</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor> -70 </factor>
+    <center>
+      <x-m> 0.06061 </x-m>
+      <y-m> 0.27000 </y-m>
+      <z-m> 0.43884 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+</PropertyList>
